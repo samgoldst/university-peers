@@ -38,7 +38,7 @@ As mentioned above, there are a small number of institutions that appeared in co
 
 Several of these missing reports have identifiable explanations. Some institutions closed or ceased operations around the 2024 reporting period, while others are administrative offices, university systems, or community-college districts rather than individual campuses. In other cases, the reason a 2024 DFR page is unavailable is unclear. These records were retained as target IDs because they were explicitly listed in another institution’s comparison group.
 
-Since these institutions had no DFR pages, they appear as `target_id` values in `edges.csv`, but not as `source_id` values.
+Since these institutions have no usable DFR pages, they appear as `target_id` values in `edges.csv`, but not as `source_id` values.
 
 There are 18 such institutions:
 
