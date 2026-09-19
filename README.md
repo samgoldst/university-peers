@@ -2,7 +2,7 @@ This repository contains a network of U.S. postsecondary institutions and the co
 
 IPEDS, the Integrated Postsecondary Education Data System, is operated by the National Center for Education Statistics within the U.S. Department of Education. Its Data Feedback Report is “intended to provide institutions a context for examining the data they submitted to IPEDS.”
 
-The repository contains two CSV files:
+The repository contains two CSV files, as well as the scraper used to make them. Below are the descriptions of the CSV files:
 
 &emsp;(1) `institutions.csv`:
 
