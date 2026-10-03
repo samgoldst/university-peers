@@ -22,46 +22,4 @@ For every institution listed in a report’s comparison group, the crawler attem
 
 In total, the crawler discovered 5,828 UnitIDs, of which 5,810 were successfully processed and 18 had unusable DFR pages.
 
-Some institutions have no usable DFR pages. As such, they appear as `target_id` values in `edges.csv`, but not as `source_id` values.
-
-There are 18 such institutions:
-
-&emsp;`144777`: DeVry University-Administrative Office (Lisle, IL): Administrative office
-
-&emsp;`149763`: Oak Point University (Oak Brook, IL): Permanently closed
-
-&emsp;`165556`: Lincoln Technical Institute-Somerville (Somerville, MA): Permanently closed
-
-&emsp;`181941`: Career College of Northern Nevada (Sparks, NV): Permanently closed
-
-&emsp;`199175`: University of North Carolina System (Raleigh, NC): System-level administrative entity
-
-&emsp;`204468`: Notre Dame College (Cleveland, OH): Permanently closed
-
-&emsp;`212805`: Grove City College (Grove City, PA): DFR unavailable despite having a 2024 IPEDS reported-data page:
-
-&emsp;&emsp;https://nces.ed.gov/ipeds/reported-data/212805?year=2024&surveyNumber=1
-
-&emsp;`214661`: Pennsylvania State System of Higher Education-Central Office (Harrisburg, PA): System-level administrative entity
-
-&emsp;`215336`: Beaver Falls Beauty Academy (Beaver Falls, PA): Permanently closed
-
-&emsp;`222497`: Alamo Community College District Central Office (San Antonio, TX): District-level administrative entity
-
-&emsp;`366289`: InterCoast Colleges-Santa Ana (Santa Ana, CA): DFR unavailable; institution appears to have ceased operations
-
-&emsp;`406547`: City College-Gainesville (Gainesville, FL): Permanently closed
-
-&emsp;`428426`: San Bernardino Community College District (San Bernardino, CA): District-level administrative entity
-
-&emsp;`432144`: South Orange County Community College District (Mission Viejo, CA): District-level administrative entity
-
-&emsp;`448637`: West Hills Community College District (Coalinga, CA): District-level administrative entity
-
-&emsp;`449889`: American College of Education (Indianapolis, IN): DFR unavailable despite having a 2024 IPEDS reported-data page:
-
-&emsp;&emsp;https://nces.ed.gov/ipeds/reported-data/449889?year=2024&surveyNumber=1
-
-&emsp;`456171`: Urbana Theological Seminary (Urbana, IL): Limited IPEDS reporting history
-
-&emsp;`460525`: Milan Institute-Boise (Boise, ID): Permanently closed
+18 institutions have no usable DFR pages. As such, they appear as `target_id` values in `edges.csv`, but not as `source_id` values.
