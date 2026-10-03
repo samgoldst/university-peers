@@ -22,7 +22,7 @@ For every institution listed in a report’s comparison group, the crawler attem
 
 In total, the crawler discovered 5,828 UnitIDs, of which 5,810 were successfully processed and 18 had unusable DFR pages.
 
-Since these institutions have no usable DFR pages, they appear as `target_id` values in `edges.csv`, but not as `source_id` values.
+Some institutions have no usable DFR pages. As such, they appear as `target_id` values in `edges.csv`, but not as `source_id` values.
 
 There are 18 such institutions:
 
