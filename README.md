@@ -18,8 +18,4 @@ The dataset was collected using a simple link-following web crawler. The crawler
 
 &emsp;https://nces.ed.gov/ipeds/dfr/2024/ReportHTML.aspx?unitId=240444
 
-For every institution listed in a report’s comparison group, the crawler attempted to visit that institution’s Data Feedback Report and repeat the process. Newly encountered institutions were added to the set of pages to visit.
-
-In total, the crawler discovered 5,828 UnitIDs, of which 5,810 were successfully processed and 18 had unusable DFR pages.
-
-18 institutions have no usable DFR pages. As such, they appear as `target_id` values in `edges.csv`, but not as `source_id` values.
+In total, the crawler discovered 5,828 UnitIDs, of which 5,810 were successfully processed. 18 had unusable DFR pages. Those appear as `target_id` values in `edges.csv`, but not as `source_id` values.
