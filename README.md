@@ -22,22 +22,6 @@ For every institution listed in a report’s comparison group, the crawler attem
 
 In total, the crawler discovered 5,828 UnitIDs, of which 5,810 were successfully processed and 18 had unusable DFR pages.
 
-I wrote the crawler for fun in an hour or so, meaning the code is pretty simple and there are a few things I would do differently if I wrote it again.
-
-&emsp;(1) Failed pages are added back into the queue without a maximum retry count. This meant that near the end of the crawl, pages that were never going to work kept getting retried over and over.
-
-&emsp;(2) The crawler does not save its progress. If the program is stopped, the sets of completed and queued pages are lost. I ended up losing a few fairly long runs because of this.
-
-&emsp;(3) There is no explicit rate limiter in the code. My internet connection was slow enough that it was making about one request per second. I did not get throttled.
-
-&emsp;(4) The HTML parsing is based on the exact HTML structure of the 2024 DFR pages, so changes to the page format will likely break it.
-
-Note that the original `institutions.csv` produced by the crawler used semicolons as delimiters because the city field contains commas. GitHub did not display that file conveniently, so I opened it in PyCharm’s table view and copied the table into the GitHub editor. That produced the comma-delimited version currently in the repository. The original semicolon-delimited version can be seen in the repository history.
-
-As mentioned above, there are a small number of institutions that appeared in comparison groups and therefore have IPEDS UnitIDs, but whose 2024 Data Feedback Report pages were unusable. All of these were manually double-checked and confirmed not to have a usable 2024 Data Feedback Report at the expected DFR URL.
-
-Several of these missing reports have identifiable explanations. Some institutions closed or ceased operations around the 2024 reporting period, while others are administrative offices, university systems, or community-college districts rather than individual campuses. In other cases, the reason a 2024 DFR page is unavailable is unclear. These records were retained as target IDs because they were explicitly listed in another institution’s comparison group.
-
 Since these institutions have no usable DFR pages, they appear as `target_id` values in `edges.csv`, but not as `source_id` values.
 
 There are 18 such institutions:
